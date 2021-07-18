@@ -1,12 +1,25 @@
-import { HomePage } from "./components/HomePage"
-import { Header } from "./components/Header"
-import { Footer } from "./components/Footer"
+import { Header } from "./Header"
+import { Footer } from "./Footer"
+import { CamCapture } from "./CamCapture"
+import { ImageUpload } from "./ImageUpload"
+import React, { useState } from "react"
+import { config } from "./config"
 
 function App() {
+
+  const mlApiUrl = config.mlApiUrl || "http://localhost:8080/"
+  const [resourceType, setResourceType] = useState(null)
+
   return (
     <div>
       <Header />
-      <HomePage />
+      <div className="btn-group" role="group" aria-label="Basic example">
+        <button className="btn btn-primary" onClick={() => setResourceType(<ImageUpload mlApiUrl={mlApiUrl} />)}>Upload Image</button>
+        <button className="btn btn-success" onClick={() => setResourceType(<CamCapture mlApiUrl={mlApiUrl} />)}>Capture Image</button>
+      </div>
+      <div>
+        {resourceType}
+      </div>
       <Footer />
     </div>
   );

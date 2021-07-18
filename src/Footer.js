@@ -1,10 +1,10 @@
 import React from 'react'
-import './Footer.css'
+import './Common.css'
 
 export const Footer = () => {
     return (
         <div className="Footer">
-            <footer><h6>This is footer text</h6></footer>
+            <footer><h6>Developed by Nishant Baheti</h6></footer>
         </div>
     )
 }

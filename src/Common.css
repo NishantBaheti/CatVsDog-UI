@@ -1,3 +1,19 @@
+.card {
+  border: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+button {
+  border: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
 .Footer {
     position: fixed;
     position: fixed;
