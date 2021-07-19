@@ -30,7 +30,7 @@ export const ImageUpload = (props) => {
                 .then(response => {
                     setPrediction(response)
                 }).catch((error) => {
-                    // alert(error)
+                    console.log(error)
                     setPrediction("Network Error.")
                 });
         }

@@ -32,11 +32,13 @@ export const CamCapture = (props) => {
     )
 
     const getPredicton = () => {
+        console.log("here")
         if (image !== null) {
             postData(props.mlApiUrl + 'classify/withImageString', { imageString: image })
                 .then(response => {
                     setPrediction(response)
                 }).catch((error) => {
+                    console.log(error)
                     setPrediction("Network Error.")
                 });
         }
