@@ -1,3 +1,3 @@
 export const config = {
-    "mlApiUrl" : "http://localhost:8080/"
+    "mlApiUrl" : "http://backend:8080/"
 }
