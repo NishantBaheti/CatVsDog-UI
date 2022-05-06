@@ -1,3 +1,3 @@
 export const config = {
-    "mlApiUrl" : "http://backend:8080/"
+    "mlApiUrl" : "https://catordogpython.herokuapp.com/"
 }
