@@ -7,7 +7,7 @@ import { config } from "./config"
 
 function App() {
 
-  const mlApiUrl = config.mlApiUrl || "http://localhost:8080/"
+  const mlApiUrl = config.mlApiUrl || "https://catordogpython.herokuapp.com/"
   const [resourceType, setResourceType] = useState(null)
 
   return (
